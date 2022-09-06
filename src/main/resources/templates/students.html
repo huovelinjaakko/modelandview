@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Opiskelijat</title>
+</head>
+<body>
+
+	<table>
+		<tr th:each="oppilas : ${studentList}">
+			<td th:text="${oppilas.fname}"></td>
+			<td th:text="${oppilas.lname}"></td>
+	</table>
+
+</body>
+</html>

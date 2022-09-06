@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Server programming with Spring Boot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+	<body>
+	
+		<p th:text="'Hello, ' + ${name} + ', ' + ${ika} + ' vuotta!' " /><p>
+		<div th:if="${ika} &gt; 17">Olet yli 18 vuotta</div>
+		<div th:if="${ika} &lt; 18">Olet alle 18 vuotta</div>
+		
+	</body>
+
+
+
+</html>
